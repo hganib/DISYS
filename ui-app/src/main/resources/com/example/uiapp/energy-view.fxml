@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.DatePicker?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.uiapp.EnergyController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <HBox>
+        <Label text="Community Pool: "/>
+        <Label text="78,45%"/>
+    </HBox>
+    <HBox>
+        <Label text="Grid Portion: "/>
+        <Label text="7,5%"/>
+    </HBox>
+    <Button text="refresh"/>
+
+    <HBox>
+        <Label text="Start: "/>
+        <DatePicker/>
+    </HBox>
+    <HBox>
+        <Label text="Ende: "/>
+        <DatePicker/>
+    </HBox>
+    <Button text="show data"/>
+
+    <HBox>
+        <Label text="Community produced: "/>
+        <Label text="123.124 kWh"/>
+    </HBox>
+    <HBox>
+        <Label text="Community used: "/>
+        <Label text="13.124 kWh"/>
+    </HBox>
+    <HBox>
+        <Label text="Grid used: "/>
+        <Label text="13.624 kWh"/>
+    </HBox>
+
+</VBox>
