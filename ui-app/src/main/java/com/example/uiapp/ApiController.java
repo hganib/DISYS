@@ -3,12 +3,14 @@ package com.example.uiapp;
 import com.example.uiapp.entity.EnergyCurrent;
 import com.example.uiapp.entity.EnergyHistorical;
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 public class ApiController {
 
@@ -23,12 +25,17 @@ public class ApiController {
     @FXML
     private Label responseGridUsed;
     @FXML
+    private DatePicker startDatePicker;
+    @FXML
+    private DatePicker endDatePicker;
+    @FXML
     private HttpClient client;
     private ObjectMapper objectMapper;
 
     public ApiController() {
         this.client = HttpClient.newHttpClient();
         this.objectMapper = new ObjectMapper();
+        this.objectMapper.registerModule(new JavaTimeModule());
     }
 
 
@@ -57,9 +64,13 @@ public class ApiController {
     @FXML
     protected void refreshHistoricalEnergy() {
         try {
+            String start = startDatePicker.getValue().atStartOfDay().toString();  // -> LocalDate to LocalDateTime
+            String end = endDatePicker.getValue().plusDays(1).atStartOfDay().toString();
+
+
             HttpRequest request = HttpRequest.newBuilder()
                     .GET()
-                    .uri(new URI("http://localhost:8080/energy/historical?start=2025-01-01&end=2025-03-01"))
+                    .uri(new URI("http://localhost:8080/energy/historical?start=" + start + "&end=" + end))
                     .build();
 
             HttpResponse<String> response =

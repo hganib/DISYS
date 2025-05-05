@@ -23,11 +23,11 @@
 
     <HBox>
         <Label text="Start: "/>
-        <DatePicker/>
+        <DatePicker fx:id="startDatePicker"/>
     </HBox>
     <HBox>
         <Label text="Ende: "/>
-        <DatePicker/>
+        <DatePicker fx:id="endDatePicker"/>
     </HBox>
     <Button onAction="#refreshHistoricalEnergy" text="show data"/>
 
