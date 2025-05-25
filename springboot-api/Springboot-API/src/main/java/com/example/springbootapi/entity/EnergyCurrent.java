@@ -15,14 +15,14 @@ public class EnergyCurrent {
     private int id;
     private double communityPool;
     private double gridPortion;
-    private LocalDateTime timestamp;
+    private LocalDateTime hour;
 
     public EnergyCurrent() {}
 
-    public EnergyCurrent(double communityPool, double gridPortion, LocalDateTime timestamp) {
+    public EnergyCurrent(double communityPool, double gridPortion, LocalDateTime hour) {
         this.communityPool = communityPool;
         this.gridPortion = gridPortion;
-        this.timestamp = timestamp;
+        this.hour = hour;
     }
 
     public double getCommunityPool() {
@@ -41,7 +41,7 @@ public class EnergyCurrent {
         this.gridPortion = gridPortion;
     }
 
-    public LocalDateTime getTimestamp() {return timestamp;}
+    public LocalDateTime getHour() {return hour;}
 
-    public void setTimestamp(LocalDateTime timestamp) {this.timestamp = timestamp;}
+    public void setHour(LocalDateTime timestamp) {this.hour = timestamp;}
 }

@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class EnergyCurrent {
     private double communityPool;
     private double gridPortion;
-    private LocalDateTime timestamp;
+    private LocalDateTime hour;
 
     public double getCommunityPool() {
         return communityPool;
@@ -23,9 +23,9 @@ public class EnergyCurrent {
         this.gridPortion = gridPortion;
     }
 
-    public LocalDateTime getTimestamp() {
-        return timestamp;
+    public LocalDateTime getHour() {
+        return hour;
     }
 
-    public void setTimestamp(LocalDateTime timestamp) {this.timestamp = timestamp;}
+    public void setHour(LocalDateTime hour) {this.hour = hour;}
 }

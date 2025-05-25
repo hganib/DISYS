@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface EnergyCurrentRepository
     extends JpaRepository<EnergyCurrent, Integer>
     {
-        EnergyCurrent findTopByOrderByTimestampDesc();
+        EnergyCurrent findTopByOrderByHourDesc();
     }

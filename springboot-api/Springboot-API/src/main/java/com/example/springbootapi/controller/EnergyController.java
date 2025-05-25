@@ -24,7 +24,7 @@ public class EnergyController {
 
     @GetMapping("/energy/current") //http://localhost:8080/energy/current
     public EnergyCurrent currentEnergy() {
-        return energyCurrentRepository.findTopByOrderByTimestampDesc();
+        return energyCurrentRepository.findTopByOrderByHourDesc();
     }
 
     @GetMapping("/energy/historical") //http://localhost:8080/energy/historical?start=2025-01-01&end=2025-03-01
@@ -33,7 +33,7 @@ public class EnergyController {
         List<Object[]> results = energyHistoricalRepository.sumHistoricalByDateRange(start, end);
 
         if (results.isEmpty() || results.get(0) == null) {
-            return new EnergyHistorical(3340, 0, 0, start, end);
+            return new EnergyHistorical(3340, 0, 0, start);
         }
 
         Object[] result = results.get(0);
@@ -42,6 +42,6 @@ public class EnergyController {
         double communityUsed     = result[1] != null ? ((Number) result[1]).doubleValue() : 0.0;
         double gridUsed          = result[2] != null ? ((Number) result[2]).doubleValue() : 0.0;
 
-        return new EnergyHistorical(communityProduced, communityUsed, gridUsed, start, end);
+        return new EnergyHistorical(communityProduced, communityUsed, gridUsed, start);
     }
 }

@@ -11,6 +11,10 @@ import java.util.List;
 public interface EnergyHistoricalRepository
     extends JpaRepository<EnergyHistorical, Integer>
     {
-        @Query("SELECT SUM(e.communityProduced), SUM(e.communityUsed), SUM(e.gridUsed) FROM EnergyHistorical e WHERE e.startTime >= :start AND e.endTime <= :end")
+        @Query("""
+            SELECT SUM(e.communityProduced), SUM(e.communityUsed), SUM(e.gridUsed)
+            FROM EnergyHistorical e
+            WHERE e.hour >= :start AND e.hour <= :end
+        """)
         List<Object[]> sumHistoricalByDateRange(@Param("start") LocalDateTime start, @Param("end") LocalDateTime end);
     }

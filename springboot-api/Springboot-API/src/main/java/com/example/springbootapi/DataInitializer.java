@@ -24,28 +24,35 @@ public class DataInitializer {
     @PostConstruct
     public void initData() {
 
-        for (int i = 0; i < 10; i++) {
-            double currentPool = ThreadLocalRandom.current().nextDouble(0, 100);
-            double gridPortion = 100 - currentPool;
+        // 🔁 Aktueller Eintrag für aktuelle Stunde
+        double communityPool = ThreadLocalRandom.current().nextDouble(0, 100);
+        double gridPortion = 100 - communityPool;
+        LocalDateTime hour = LocalDateTime.now().withMinute(0).withSecond(0).withNano(0); // gerundete Stunde
 
-            energyCurrentRepository.save(new EnergyCurrent(
-                    Math.round(currentPool * 100.0) / 100.0,
-                    Math.round(gridPortion * 100.0) / 100.0,
-                    LocalDateTime.now().minusDays(i + 1)
-            ));
+        energyCurrentRepository.save(new EnergyCurrent(
+                round(communityPool),
+                round(gridPortion),
+                hour
+        ));
+
+        // ⏳ Historische stündliche Daten (wie zuvor)
+        for (int dayOffset = 3; dayOffset > 0; dayOffset--) {
+            LocalDateTime baseDate = LocalDateTime.now().minusDays(dayOffset).toLocalDate().atStartOfDay();
+
+            for (int h = 0; h < 24; h++) {
+                LocalDateTime timestamp = baseDate.plusHours(h);
+
+                energyHistoricalRepository.save(new EnergyHistorical(
+                        round(ThreadLocalRandom.current().nextDouble(100.0, 300.0)),
+                        round(ThreadLocalRandom.current().nextDouble(100.0, 300.0)),
+                        round(ThreadLocalRandom.current().nextDouble(100.0, 300.0)),
+                        timestamp
+                ));
+            }
         }
+    }
 
-        for (int i = 10; i > 0; i--) {
-            LocalDateTime start = LocalDateTime.now().minusDays(i).toLocalDate().atStartOfDay();
-            LocalDateTime end = start.plusDays(1);
-
-            energyHistoricalRepository.save(new EnergyHistorical(
-                    Math.round(ThreadLocalRandom.current().nextDouble(1000, 3000) * 100.0) / 100.0,
-                    Math.round(ThreadLocalRandom.current().nextDouble(1000, 3000) * 100.0) / 100.0,
-                    Math.round(ThreadLocalRandom.current().nextDouble(1000, 3000) * 100.0) / 100.0,
-                    start,
-                    end
-            ));
-        }
+    private double round(double value) {
+        return Math.round(value * 100.0) / 100.0;
     }
 }

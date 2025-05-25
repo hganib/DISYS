@@ -16,17 +16,15 @@ public class EnergyHistorical {
     private double communityProduced;
     private double communityUsed;
     private double gridUsed;
-    private LocalDateTime startTime;
-    private LocalDateTime endTime;
+    private LocalDateTime hour;
 
     public EnergyHistorical() {}
 
-    public EnergyHistorical(double communityProduced, double communityUsed, double gridUsed, LocalDateTime startTime, LocalDateTime endTime) {
+    public EnergyHistorical(double communityProduced, double communityUsed, double gridUsed, LocalDateTime startTime) {
         this.communityProduced = communityProduced;
         this.communityUsed = communityUsed;
         this.gridUsed = gridUsed;
-        this.startTime = startTime;
-        this.endTime = endTime;
+        this.hour = startTime;
     }
 
     public double getCommunityProduced() {
@@ -53,11 +51,8 @@ public class EnergyHistorical {
         this.gridUsed = gridUsed;
     }
 
-    public LocalDateTime getStartTime() {return startTime;}
+    public LocalDateTime getHour() {return hour;}
 
-    public void setStartTime(LocalDateTime startTime) {this.startTime = startTime;}
+    public void setHour(LocalDateTime startTime) {this.hour = startTime;}
 
-    public LocalDateTime getEndTime() {return endTime;}
-
-    public void setEndTime(LocalDateTime endTime) {this.endTime = endTime;}
 }
