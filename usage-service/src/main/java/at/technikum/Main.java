@@ -65,23 +65,33 @@ public class Main {
     private static EnergyHistorical updateConsumption(EnergyMessage msg) {
         EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
         EntityTransaction tx = em.getTransaction();
-        EnergyHistorical record = null;
+        EnergyHistorical record;
 
         try {
             tx.begin();
             LocalDateTime ts  = LocalDateTime.parse(msg.getDatetime());
             LocalDateTime hr  = ts.withMinute(0).withSecond(0).withNano(0);
 
-            record = em.createQuery(
-                            "SELECT e FROM EnergyHistorical e WHERE e.hour = :hour",
-                            EnergyHistorical.class
-                    )
-                    .setParameter("hour", hr)
-                    .getSingleResult();
+            try {
+                record = em.createQuery(
+                                "SELECT e FROM EnergyHistorical e WHERE e.hour = :hour",
+                                EnergyHistorical.class
+                        )
+                        .setParameter("hour", hr)
+                        .getSingleResult();
+            } catch (NoResultException nre) {
+                // Wenn noch kein Datensatz da ist, lege ihn an
+                record = new EnergyHistorical();
+                record.setHour(hr);
+                record.setCommunityProduced(0.0);
+                record.setCommunityUsed(0.0);
+                record.setGridUsed(0.0);
+                em.persist(record);
+            }
 
+            // Verbrauch aufsummieren
             double usedSum = record.getCommunityUsed() + msg.getKwh();
             double over    = Math.max(0, usedSum - record.getCommunityProduced());
-
             record.setCommunityUsed(Math.min(usedSum, record.getCommunityProduced()));
             record.setGridUsed(record.getGridUsed() + over);
             em.merge(record);
@@ -89,22 +99,18 @@ public class Main {
             tx.commit();
             System.out.println(String.format(
                     "🪫 Consumption updated: Stunde=%s | kWh=%.3f | community_used=%.3f | grid_used=%.3f",
-                    hr,
-                    msg.getKwh(),
-                    record.getCommunityUsed(),
-                    record.getGridUsed()
+                    hr, msg.getKwh(), record.getCommunityUsed(), record.getGridUsed()
             ));
 
-        } catch (NoResultException nre) {
-            // falls noch kein historischer Eintrag existiert, könnte man ihn hier anlegen
-            tx.rollback();
-            System.err.println("❌ Kein Datensatz zum Updaten gefunden für " + msg);
         } catch (Exception e) {
             if (tx.isActive()) tx.rollback();
             e.printStackTrace();
+            return null;
         } finally {
             em.close();
         }
+
+        // Immer einen non-null Wert zurückgeben!
         return record;
     }
 
