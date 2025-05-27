@@ -31,11 +31,11 @@ public class Main {
                 double kwh = generateKwh(now.getHour());
                 String timestamp = now.format(formatter);
 
-                EnergyMessage msg = new EnergyMessage("USER", "COMMUNITY", kwh, timestamp);
+                EnergyMessage msg = new EnergyMessage("PRODUCER", "COMMUNITY", kwh, timestamp);
                 String json = mapper.writeValueAsString(msg);
 
                 channel.basicPublish("", QUEUE_NAME, null, json.getBytes(StandardCharsets.UTF_8));
-                System.out.println(" [x] Sent USER-Message: " + json);
+                System.out.println(" [x] Sent PRODUCER-Message: " + json);
 
                 Thread.sleep(3000); // alle 3 Sekunden
             }
