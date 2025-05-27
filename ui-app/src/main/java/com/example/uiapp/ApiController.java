@@ -86,9 +86,15 @@ public class ApiController implements Initializable {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             EnergyHistorical energyHistorical = objectMapper.readValue(response.body(), EnergyHistorical.class);
 
-            responseCommunityProduced.setText("Community produced: %s kWh".formatted(energyHistorical.getCommunityProduced()));
-            responseCommunityUsed.setText("Community used: %s kWh".formatted(energyHistorical.getCommunityUsed()));
-            responseGridUsed.setText("Grid used: %s kWh".formatted(energyHistorical.getGridUsed()));
+            responseCommunityProduced.setText(
+                    String.format("Community produced: %.3f kWh", energyHistorical.getCommunityProduced())
+            );
+            responseCommunityUsed.setText(
+                    String.format("Community used: %.3f kWh", energyHistorical.getCommunityUsed())
+            );
+            responseGridUsed.setText(
+                    String.format("Grid used: %.3f kWh", energyHistorical.getGridUsed())
+            );
         } catch (Exception e) {
             e.printStackTrace();
             responseCommunityPool.setText("Error: " + e.getMessage());

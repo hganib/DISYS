@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/entity/EnergyCurrent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/util/JPAUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +50,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="energy-user" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="at.technikum.Main" />
+      <module name="energy-user" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748189368069</updated>
-      <workItem from="1748189369158" duration="11634000" />
+      <workItem from="1748189369158" duration="11890000" />
     </task>
     <servers />
   </component>
