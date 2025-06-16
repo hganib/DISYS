@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3325d6f4-3820-4e4d-a7f3-d66b3bd2bf5d" name="Changes" comment="fix value rounding in UI">
-      <change afterPath="$PROJECT_DIR$/../energy-producer/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../energy-user/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-producer/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/src/main/java/at/technikum/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <workItem from="1748189265495" duration="22333000" />
       <workItem from="1748861163379" duration="598000" />
       <workItem from="1749645475698" duration="2052000" />
-      <workItem from="1750060771437" duration="599000" />
+      <workItem from="1750060771437" duration="2017000" />
     </task>
     <task id="LOCAL-00001" summary="add energy-user and usage-service">
       <option name="closed" value="true" />

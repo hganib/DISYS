@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="add comments to energy-producer code" />
+    <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="add comments to energy-producer code">
+      <change afterPath="$PROJECT_DIR$/../energy-user/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +76,7 @@
       <workItem from="1748336996845" duration="1448000" />
       <workItem from="1748861171919" duration="1322000" />
       <workItem from="1749645472037" duration="2021000" />
-      <workItem from="1750060767440" duration="2033000" />
+      <workItem from="1750060767440" duration="2982000" />
     </task>
     <task id="LOCAL-00001" summary="change energy producer and user message interval">
       <option name="closed" value="true" />
