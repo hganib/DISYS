@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!--
+  energy-view.fxml: Defines the main UI layout for the Energy Application.
+  Uses a VBox container to stack UI elements vertically with center alignment.
+-->
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Spinner?>
+
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.uiapp.ApiController">
+    <!-- Add uniform padding around the edges -->
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
+    <!-- Current energy percentage display -->
     <HBox>
         <Label fx:id="responseCommunityPool" text="Community Pool: "/>
     </HBox>
     <HBox>
         <Label fx:id="responseGridPortion" text="Grid Portion: "/>
     </HBox>
-    <Button onAction="#refreshCurrentEnergy" text="refresh"/>
+    <!-- Button to trigger current energy refresh -->
+    <Button onAction="#refreshCurrentEnergy" text="Refresh Current"/>
 
+    <!-- Date/time selectors for historical range -->
     <HBox spacing="10">
         <Label text="Start:"/>
+        <!-- DatePicker for start date -->
         <DatePicker fx:id="startDatePicker"/>
+        <!-- Spinner for start hour (0–23) -->
         <Spinner fx:id="startHourSpinner" prefWidth="70"/>
     </HBox>
 
     <HBox spacing="10">
-        <Label text="Ende:"/>
+        <Label text="End:"/>
+        <!-- DatePicker for end date -->
         <DatePicker fx:id="endDatePicker"/>
+        <!-- Spinner for end hour (0–23) -->
         <Spinner fx:id="endHourSpinner" prefWidth="70"/>
     </HBox>
-    <Button onAction="#refreshHistoricalEnergy" text="show data"/>
+    <!-- Button to trigger historical energy refresh -->
+    <Button onAction="#refreshHistoricalEnergy" text="Show Historical Data"/>
 
+    <!-- Historical energy values display -->
     <HBox>
         <Label fx:id="responseCommunityProduced" text="Community produced: "/>
     </HBox>
