@@ -1,20 +1,25 @@
 package com.example.springbootapi.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
+/**
+ * JPA Entity representing the current distribution of energy usage.
+ * Persists the percentage split between community and grid usage for each hour.
+ */
 @Entity
+@Table(name = "energy_current")
 public class EnergyCurrent {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Id // Unique identifier for the energy current record
+    @GeneratedValue(strategy = GenerationType.SEQUENCE) // Auto-incremented primary key
     private int id;
+    @Column(name = "community_pool", nullable = false) // Percentage of energy used from the community pool
     private double communityPool;
+    @Column(name = "grid_portion", nullable = false) // Percentage of energy used from the grid
     private double gridPortion;
+    @Column(name = "hour", nullable = false, updatable = false) // Timestamp for the hour this record represents
     private LocalDateTime hour;
 
     public EnergyCurrent() {}

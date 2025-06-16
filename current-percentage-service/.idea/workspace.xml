@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3325d6f4-3820-4e4d-a7f3-d66b3bd2bf5d" name="Changes" comment="add current percentage service">
+    <list default="true" id="3325d6f4-3820-4e4d-a7f3-d66b3bd2bf5d" name="Changes" comment="add comments to current-percentage-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/HistoricalUpdateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/util/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/util/JPAUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/controller/EnergyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/controller/EnergyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/entity/EnergyCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/entity/EnergyCurrent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/entity/EnergyHistorical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyCurrentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyCurrentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/entity/EnergyHistorical.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,7 @@
       <workItem from="1748861170211" duration="598000" />
       <workItem from="1749645470184" duration="1594000" />
       <workItem from="1749732046886" duration="3000" />
-      <workItem from="1750060766363" duration="3236000" />
+      <workItem from="1750060766363" duration="4658000" />
     </task>
     <task id="LOCAL-00001" summary="add energy-user and usage-service">
       <option name="closed" value="true" />
@@ -105,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748353212706</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add comments to current-percentage-service">
+      <option name="closed" value="true" />
+      <created>1750086642862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750086642862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +138,7 @@
     <MESSAGE value="add energy-user and usage-service" />
     <MESSAGE value="add energy-producer and update usage-service" />
     <MESSAGE value="add current percentage service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add current percentage service" />
+    <MESSAGE value="add comments to current-percentage-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments to current-percentage-service" />
   </component>
 </project>
