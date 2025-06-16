@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="change energy producer and user message interval">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="add comments to energy-producer code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +69,7 @@
       <workItem from="1748336996845" duration="1448000" />
       <workItem from="1748861171919" duration="1322000" />
       <workItem from="1749645472037" duration="2021000" />
-      <workItem from="1750060767440" duration="1706000" />
+      <workItem from="1750060767440" duration="2033000" />
     </task>
     <task id="LOCAL-00001" summary="change energy producer and user message interval">
       <option name="closed" value="true" />
@@ -82,7 +79,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750062660775</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add comments to energy-producer code">
+      <option name="closed" value="true" />
+      <created>1750063644611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750063644611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change energy producer and user message interval" />
-    <option name="LAST_COMMIT_MESSAGE" value="change energy producer and user message interval" />
+    <MESSAGE value="add comments to energy-producer code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments to energy-producer code" />
   </component>
 </project>

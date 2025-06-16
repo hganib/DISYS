@@ -19,7 +19,7 @@ public class Main {
     private final static String QUEUE_NAME = "energy";
 
     public static void main(String[] args) throws Exception {
-        // Set up a connection factory for RabbitM
+        // Set up a connection factory for RabbitMQ
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
 
@@ -52,7 +52,7 @@ public class Main {
 
                 // 4. Sleep for a random delay between 1 and 5 seconds
                 int delaySeconds = ThreadLocalRandom.current().nextInt(1, 6);
-                Thread.sleep(delaySeconds * 1000L);
+                Thread.sleep(delaySeconds * 1000L); //L converts int to long for sleep()
                 System.out.println(delaySeconds + " second/s delay before next message");
             }
         }
