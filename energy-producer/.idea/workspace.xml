@@ -6,17 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="add comments to energy-producer code">
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/util/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/util/JPAUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/EnergyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/EnergyMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-user/src/main/java/at/technikum/EnergyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/src/main/java/at/technikum/EnergyMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/EnergyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/EnergyMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/entity/EnergyHistorical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/util/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/java/at/technikum/util/JPAUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../usage-service/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

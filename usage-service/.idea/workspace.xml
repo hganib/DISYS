@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3325d6f4-3820-4e4d-a7f3-d66b3bd2bf5d" name="Changes" comment="add comments to usage-service">
+    <list default="true" id="3325d6f4-3820-4e4d-a7f3-d66b3bd2bf5d" name="Changes" comment="add missing comments to usage-service, energy-producer and energy-user">
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/util/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/src/main/java/at/technikum/util/JPAUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-producer/src/main/java/at/technikum/EnergyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/src/main/java/at/technikum/EnergyMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-user/src/main/java/at/technikum/EnergyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/src/main/java/at/technikum/EnergyMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/EnergyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/EnergyMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/HistoricalUpdateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/HistoricalUpdateMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/entity/EnergyHistorical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/util/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/util/JPAUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,7 @@
       <workItem from="1748189265495" duration="22333000" />
       <workItem from="1748861163379" duration="598000" />
       <workItem from="1749645475698" duration="2052000" />
-      <workItem from="1750060771437" duration="4710000" />
+      <workItem from="1750060771437" duration="5629000" />
     </task>
     <task id="LOCAL-00001" summary="add energy-user and usage-service">
       <option name="closed" value="true" />
@@ -127,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750066316856</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add missing comments to usage-service, energy-producer and energy-user">
+      <option name="closed" value="true" />
+      <created>1750068907094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750068907094</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +153,7 @@
     <MESSAGE value="add update message to usage service" />
     <MESSAGE value="fix value rounding in UI" />
     <MESSAGE value="add comments to usage-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments to usage-service" />
+    <MESSAGE value="add missing comments to usage-service, energy-producer and energy-user" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing comments to usage-service, energy-producer and energy-user" />
   </component>
 </project>

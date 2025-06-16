@@ -3,26 +3,25 @@ package at.technikum.entity;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * JPA Entity representing the current distribution of energy usage.
+ * Persists the percentage split between community and grid usage for each hour.
+ */
 @Entity
 @Table(name = "energy_current")
 public class EnergyCurrent {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // Unique identifier for the energy current record
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-incremented primary key
     private Long id;
 
-    /**
-     * Stunde (auf volle Stunde gerundet), z. B. 2025-05-26T08:00
-     */
-    @Column(name = "hour", nullable = false, updatable = false)
+    @Column(name = "hour", nullable = false, updatable = false) // Timestamp for the hour this record represents
     private LocalDateTime hour;
 
-    /** Prozentsatz der Community (z.B. 51.69) */
-    @Column(name = "community_pool", nullable = false)
+    @Column(name = "community_pool", nullable = false) // Percentage of energy used from the community pool
     private double communityPool;
 
-    /** Prozentsatz der Grid-Portion (z.B. 48.31) */
-    @Column(name = "grid_portion", nullable = false)
+    @Column(name = "grid_portion", nullable = false) // Percentage of energy used from the grid
     private double gridPortion;
 
     public EnergyCurrent() {

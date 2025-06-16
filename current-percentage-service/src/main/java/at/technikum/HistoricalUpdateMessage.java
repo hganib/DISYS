@@ -2,6 +2,10 @@ package at.technikum;
 
 import java.time.LocalDateTime;
 
+/**
+ * DTO for sending hourly aggregation updates via RabbitMQ.
+ * Holds the timestamp of the hour and aggregated energy values.
+ */
 public class HistoricalUpdateMessage {
     private LocalDateTime hour;
     private double communityProduced;
@@ -15,6 +19,9 @@ public class HistoricalUpdateMessage {
         this.gridUsed = gridUsed;
     }
 
+    /**
+     * No-arg constructor required by Jackson for deserialization.
+     */
     public HistoricalUpdateMessage() {
         // Default constructor for deserialization
     }
