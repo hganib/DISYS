@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  persistence.xml: Configuration file for JPA (Jakarta Persistence).
+  Defines a Persistence Unit named "usagePU" including entity classes and database connection properties.
+-->
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
+
+    <!--
+      Define the persistence unit with the name used by Persistence.createEntityManagerFactory("usagePU").
+    -->
     <persistence-unit name="usagePU">
+        <!-- List all JPA entity classes managed by this persistence unit -->
         <class>at.technikum.entity.EnergyHistorical</class>
 
         <properties>
+            <!-- JDBC driver class for PostgreSQL -->
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <!-- JDBC URL for connecting to the PostgreSQL database -->
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/disysdb"/>
+            <!-- Database user name -->
             <property name="jakarta.persistence.jdbc.user" value="disysuser"/>
+            <!-- Database password -->
             <property name="jakarta.persistence.jdbc.password" value="disyspw"/>
 
+            <!-- Hibernate SQL dialect for PostgreSQL -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <!--
+              Schema management strategy:
+              - update: compare entity definitions to the database schema and apply changes at startup.
+              -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!--
+              SQL logging:
+              - true: print all generated SQL statements to the console.
+              - false: disable raw SQL logs
+            -->
             <property name="hibernate.show_sql" value="false"/>
         </properties>
     </persistence-unit>

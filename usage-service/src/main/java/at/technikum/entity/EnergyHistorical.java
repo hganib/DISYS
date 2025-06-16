@@ -3,6 +3,10 @@ package at.technikum.entity;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * JPA Entity representing hourly aggregates of energy production and consumption.
+ * Mapped to the 'energy_historical' table in the database.
+ */
 @Entity
 @Table(name = "energy_historical")
 public class EnergyHistorical {

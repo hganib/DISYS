@@ -1,7 +1,6 @@
 package at.technikum;
 
 import at.technikum.entity.EnergyCurrent;
-import at.technikum.HistoricalUpdateMessage;
 import at.technikum.util.JPAUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -14,6 +13,11 @@ import jakarta.persistence.NoResultException;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 
+/**
+ * Current Percentage Service: consumes hourly aggregation updates,
+ * calculates the split between community and grid usage,
+ * and persists the results to the energy_current table.
+ */
 public class Main {
 
     private static final String HIST_UPD_QUEUE = "energy_historical_updates";

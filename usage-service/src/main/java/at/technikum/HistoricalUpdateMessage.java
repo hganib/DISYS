@@ -2,6 +2,12 @@ package at.technikum;
 
 import java.time.LocalDateTime;
 
+/**
+ * Data Transfer Object (DTO) for sending hourly historical energy updates via RabbitMQ.
+ * <p>
+ * Contains the timestamp of the hour and aggregated kWh values for community production,
+ * community consumption, and grid usage.
+ */
 public class HistoricalUpdateMessage {
     private LocalDateTime hour;
     private double communityProduced;
