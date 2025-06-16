@@ -37,7 +37,9 @@ public class Main {
                 channel.basicPublish("", QUEUE_NAME, null, json.getBytes(StandardCharsets.UTF_8));
                 System.out.println(" [x] Sent USER-Message: " + json);
 
-                Thread.sleep(3000); // alle 3 Sekunden
+                int delaySeconds = ThreadLocalRandom.current().nextInt(1, 6);
+                Thread.sleep(delaySeconds * 1000L);
+                System.out.println(delaySeconds + " second/s delay before next message");
             }
         }
     }
