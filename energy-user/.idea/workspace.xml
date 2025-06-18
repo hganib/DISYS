@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="add comments to energy-user">
+      <change beforePath="$PROJECT_DIR$/../.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/EnergyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/EnergyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyCurrent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyHistorical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/resources/com/example/uiapp/energy-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/resources/com/example/uiapp/energy-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +49,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -77,7 +73,9 @@
       <workItem from="1748189369158" duration="12853000" />
       <workItem from="1748861173455" duration="1208000" />
       <workItem from="1749645473602" duration="2115000" />
-      <workItem from="1750060769148" duration="5007000" />
+      <workItem from="1750060769148" duration="5256000" />
+      <workItem from="1750163170103" duration="43000" />
+      <workItem from="1750269449073" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="add comments to energy-user">
       <option name="closed" value="true" />

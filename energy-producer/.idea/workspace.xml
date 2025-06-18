@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53734989-0abc-46a4-8f50-5181d299f280" name="Changes" comment="add comments to energy-producer code">
+      <change beforePath="$PROJECT_DIR$/../.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../current-percentage-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/EnergyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/EnergyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyCurrent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyHistorical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/resources/com/example/uiapp/energy-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/resources/com/example/uiapp/energy-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +52,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -81,7 +79,11 @@
       <workItem from="1748336996845" duration="1448000" />
       <workItem from="1748861171919" duration="1322000" />
       <workItem from="1749645472037" duration="2021000" />
-      <workItem from="1750060767440" duration="4652000" />
+      <workItem from="1750060767440" duration="4894000" />
+      <workItem from="1750163169971" duration="3000" />
+      <workItem from="1750163365800" duration="753000" />
+      <workItem from="1750164889365" duration="17000" />
+      <workItem from="1750269365155" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="change energy producer and user message interval">
       <option name="closed" value="true" />

@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3325d6f4-3820-4e4d-a7f3-d66b3bd2bf5d" name="Changes" comment="add comments to current-percentage-service">
+      <change beforePath="$PROJECT_DIR$/../.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikum/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-producer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-user/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/EnergyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/EnergyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyCurrent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyHistorical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/com/example/uiapp/entity/EnergyHistorical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ui-app/src/main/resources/com/example/uiapp/energy-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ui-app/src/main/resources/com/example/uiapp/energy-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-api/Springboot-API/src/main/java/com/example/springbootapi/repository/EnergyHistoricalRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../usage-service/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +79,8 @@
       <workItem from="1748861170211" duration="598000" />
       <workItem from="1749645470184" duration="1594000" />
       <workItem from="1749732046886" duration="3000" />
-      <workItem from="1750060766363" duration="4658000" />
+      <workItem from="1750060766363" duration="5003000" />
+      <workItem from="1750269497625" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="add energy-user and usage-service">
       <option name="closed" value="true" />

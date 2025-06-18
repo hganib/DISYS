@@ -77,11 +77,12 @@ public class Main {
             double usedCommunity = upd.getCommunityUsed();
             double usedGrid      = upd.getGridUsed();
             double totalUsage    = usedCommunity + usedGrid;
+            double communityProduced = upd.getCommunityProduced();
 
             // Calculate community usage percentage (guard divide by zero)
             double communityPool = totalUsage == 0.0
                     ? 0.0
-                    : (usedCommunity / totalUsage) * 100.0;
+                    : (usedCommunity / communityProduced) * 100.0;
             communityPool = Math.round(communityPool * 1000.0) / 1000.0; // round to 3 decimal places
 
             // Calculate grid usage percentage as the remainder to 100%
